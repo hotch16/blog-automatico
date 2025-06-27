@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Taller Digital de Precisión</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Taller Digital de Precisión</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Un Nuevo Comienzo para el Blog: Renovación y Compromiso</title>
+      <link>http://localhost:1313/posts/un-nuevo-comienzo-para-el-blog-renovaci-n-y-compromiso/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/un-nuevo-comienzo-para-el-blog-renovaci-n-y-compromiso/</guid>
+      <description>Este blog se renueva con un nuevo enfoque y un compromiso renovado con nuestros lectores. Descubre qué cambios hemos implementado y qué puedes esperar en el futuro.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Taller Digital de Precisión</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Taller Digital de Precisión</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Actualización</title>
+      <link>http://localhost:1313/tags/actualizaci%C3%B3n/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/actualizaci%C3%B3n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/tags/blog/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contenido</title>
+      <link>http://localhost:1313/tags/contenido/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/contenido/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nuevo Comienzo</title>
+      <link>http://localhost:1313/tags/nuevo-comienzo/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/nuevo-comienzo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Renovación</title>
+      <link>http://localhost:1313/tags/renovaci%C3%B3n/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/renovaci%C3%B3n/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

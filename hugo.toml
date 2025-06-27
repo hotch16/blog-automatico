@@ -1,4 +1,69 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke'
+baseURL = "https://playful-sprinkles-0bde19.netlify.app/"
+languageCode = "es-es"
+title = "Taller Digital de Precisión"
+theme = "PaperMod"
+
+# Configuración para el modo multilingüe (preparado para el futuro)
+defaultContentLanguage = "es"
+
+[languages]
+[languages.es]
+  languageName = "Español"
+  weight = 1
+  [languages.es.menu]
+    [[languages.es.menu.main]]
+      identifier = "posts"
+      name = "Blog"
+      url = "/posts/"
+      weight = 5
+    [[languages.es.menu.main]]
+      identifier = "archives"
+      name = "Archivo"
+      url = "/archives/"
+      weight = 10
+    [[languages.es.menu.main]]
+      identifier = "search"
+      name = "Buscar"
+      url = "/search/"
+      weight = 15
+    [[languages.es.menu.main]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/tags/"
+      weight = 20
+
+# Parámetros específicos del tema PaperMod
+[params]
+  env = "production"
+  author = "Erick Garcia" # Puedes poner tu nombre o un seudónimo
+  description = "Exploraciones en mecánica, IA, y el arte de la creación digital y manual."
+  defaultTheme = "dark" # "light" | "dark" | "auto"
+  disableThemeToggle = false # Permite que los usuarios cambien entre modo claro/oscuro
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  
+  [params.profileMode]
+    enabled = true # Esto activa el modo de perfil en la página de inicio
+    title = "Taller Digital de Precisión"
+    subtitle = "Exploraciones en Mecánica, IA y el Arte de la Creación"
+    # imageUrl = "/images/profile.png" # Descomenta y pon una imagen tuya en static/images/
+    # imageTitle = "Mi Logo o Foto"
+    # imageWidth = 120
+    # imageHeight = 120
+    [[params.profileMode.buttons]]
+      name = "Blog"
+      url = "posts"
+    [[params.profileMode.buttons]]
+      name = "Sobre Mí"
+      url = "about"
+
+  [params.socialIcons]
+    # Descomenta y añade tus redes sociales
+    # [[params.socialIcons.item]]
+    #   name = "youtube"
+    #   url = "https://youtube.com/"
+    # [[params.socialIcons.item]]
+    #   name = "github"
+    #   url = "https://github.com/hotch16"
