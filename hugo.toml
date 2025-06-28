@@ -1,6 +1,6 @@
 baseURL = "https://cnc-101.netlify.app/"
 languageCode = "es-es"
-title = "CNC 101: Guía para Principiantes" # Título del sitio ligeramente mejorado para SEO
+title = "CNC 101: Guía para Principiantes"
 theme = "PaperMod"
 
 # Configuración para el modo multilingüe (preparado para el futuro)
@@ -16,53 +16,34 @@ defaultContentLanguage = "es"
       name = "Blog"
       url = "/posts/"
       weight = 5
-    # [[languages.es.menu.main]]  <-- CAMBIO 1: Comentado para ocultar "Archivo"
-    #   identifier = "archives"
-    #   name = "Archivo"
-    #   url = "/archives/"
-    #   weight = 10
     [[languages.es.menu.main]]
       identifier = "search"
       name = "Buscar"
       url = "/search/"
       weight = 15
-    # [[languages.es.menu.main]]  <-- CAMBIO 1: Comentado para ocultar "Tags"
-    #   name = "Tags"
-    #   url = "/tags/"
-    #   weight = 20
 
 # Parámetros específicos del tema PaperMod
 [params]
   env = "production"
   author = "Erick Garcia"
-  description = "Tu guía de inicio en el mundo del mecanizado CNC. Aprende desde cero con tutoriales y proyectos." # Descripción del sitio ligeramente mejorada
-  defaultTheme = "dark" 
-  disableThemeToggle = false 
+  description = "Tu guía de inicio en el mundo del mecanizado CNC. Aprende desde cero con tutoriales y proyectos."
+  defaultTheme = "dark"
+  disableThemeToggle = false
   ShowShareButtons = true
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
-  
-  [params.profileMode]
-    enabled = false # <-- CAMBIO 2: Desactivado para mostrar la lista de posts en la página de inicio
-    title = "Taller Digital de Precisión"
-    subtitle = "Exploraciones en Mecánica, IA y el Arte de la Creación"
-    # imageUrl = "/images/profile.png" 
-    # imageTitle = "Mi Logo o Foto"
-    # imageWidth = 120
-    # imageHeight = 120
-    [[params.profileMode.buttons]]
-      name = "Blog"
-      url = "posts"
-    [[params.profileMode.buttons]]
-      name = "Sobre Mí"
-      url = "about"
 
-  [params.socialIcons]
-    # Descomenta y añade tus redes sociales
-    # [[params.socialIcons.item]]
-    #   name = "youtube"
-    #   url = "https://youtube.com/"
-    # [[params.socialIcons.item]]
-    #   name = "github"
-    #   url = "https://github.com/hotch16"
+# --- INICIO: Posts Relacionados y Búsqueda Mejorada ---
+# Esta sección activa la búsqueda de posts similares al final de cada artículo
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"] # Habilita el index para la búsqueda
