@@ -1,0 +1,11 @@
+{{ $tagName := .Get 0 }}
+{{ $pages := where .Site.RegularPages "Params.tags" "intersect" (slice $tagName) }}
+{{ if $pages }}
+<ul>
+  {{ range $pages }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+{{ else }}
+<p>No se encontraron artículos para esta categoría todavía.</p>
+{{ end }}
