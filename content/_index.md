@@ -1,7 +1,7 @@
 ---
 title: "Bienvenido a CNC 101"
 description: "Tu punto de partida en el mundo del mecanizado CNC. Aprende, crea y domina."
-layout: "list"
+layout: "landing"
 ---
 
 ## Empieza por los Fundamentos
