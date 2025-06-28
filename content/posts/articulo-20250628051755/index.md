@@ -1,7 +1,15 @@
+---
 title: "Guia Definitiva de Materiales CNC para Principiantes"
-date: 2025-06-28T05:17:26.730485
-description: "Materiales CNC: Esta guia completa te enseñará todo lo que necesitas saber sobre los materiales"
-tags: ["materiales cnc", "cnc 101", "guia", "conceptos", "madera cnc", "metal cnc", "plastico cnc"]
+date: "2025-06-28T05:17:26Z"
+description: "Materiales CNC. Esta guia completa te enseñara todo lo que necesitas saber sobre los materiales."
+tags:
+  - "materiales cnc"
+  - "cnc 101"
+  - "guia"
+  - "conceptos"
+  - "madera cnc"
+  - "metal cnc"
+  - "plastico cnc"
 author: "Erick Garcia"
 hideMeta: true
 featured_image: "featured.png"
