@@ -8,10 +8,11 @@ layout: "landing"
 
 Bienvenido a **CNC 101**, tu guía de confianza para aprender todo sobre el Control Numérico por Computador desde cero. Mi misión es transformar conceptos complejos en conocimiento práctico y accionable.
 
+<div class="landing-content">
+
 ---
 
 ## Empieza por los Fundamentos
-
 Aquí tienes los pilares para construir tu conocimiento. Estos son los artículos que te recomiendo leer primero.
 
 {{< list-pages-by-tag "conceptos" >}}
@@ -19,7 +20,8 @@ Aquí tienes los pilares para construir tu conocimiento. Estos son los artículo
 ---
 
 ## Manos a la Obra: Tutoriales Prácticos
-
 La mejor forma de aprender es haciendo. Sigue estos tutoriales paso a paso para ganar experiencia real.
 
 {{< list-pages-by-tag "tutorial" >}}
+
+</div>
