@@ -1,6 +1,7 @@
 ---
 title: "Sobre Este Viaje"
 layout: "page"
+hideMeta: true # <-- ESTE ES EL INTERRUPTOR MÁGICO
 ---
 
 Hola, soy Erick. Y si estás aquí, probablemente seas como yo: un completo principiante en el fascinante mundo del CNC, con más curiosidad que experiencia.
