@@ -1,8 +1,15 @@
 ---
-title: Guía Definitiva de Materiales CNC para Principiantes
-date: 2025-06-28T05:17:26.730485
-description: Materiales CNC: Esta guía completa te enseñará todo lo que necesitas saber sobre los materiales adecuados para tu máquina CNC, desde maderas y metales hasta plásticos y acrílicos. Domina el mecanizado CNC desde cero.  Descubre las propiedades, aplicaciones y consejos de corte para cada material. ¡Comienza tu proyecto hoy mismo!
-tags: ["materiales cnc", "cnc 101", "guía", "conceptos", "madera cnc", "metal cnc", "plastico cnc"]
+title: "Guia Definitiva de Materiales CNC para Principiantes"
+date: "2025-06-28T05:17:26Z"
+description: "Materiales CNC. Esta guia completa te enseñara todo lo que necesitas saber sobre los materiales."
+tags:
+  - "materiales cnc"
+  - "cnc 101"
+  - "guia"
+  - "conceptos"
+  - "madera cnc"
+  - "metal cnc"
+  - "plastico cnc"
 author: "Erick Garcia"
 hideMeta: true
 featured_image: "featured.png"
