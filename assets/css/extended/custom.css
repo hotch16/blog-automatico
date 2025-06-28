@@ -1,19 +1,16 @@
 /*
  * Arreglo definitivo para las tarjetas de la homepage.
- * Causa Raíz: Un elemento <a> (inline) no puede contener y controlar
- * correctamente un elemento <h2> (block), causando desbordamiento.
- * Solución: Convertir el <a> en un bloque y luego truncar el <h2>.
+ * Usando máxima especificidad y !important para forzar el estilo.
 */
 
 /* PASO 1: Forzar al contenedor del enlace a comportarse como un bloque. */
-.post-entry .entry-header a.entry-link {
-    display: block;
-    /* Esto asegura que el enlace ocupe todo el ancho y pueda controlar a sus hijos. */
+body .post-entry a.entry-link {
+    display: block !important;
 }
 
 /* PASO 2: Truncar el título que ahora vive dentro de un contenedor competente. */
-.post-entry .entry-header h2 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+body .post-entry h2 {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
 }
