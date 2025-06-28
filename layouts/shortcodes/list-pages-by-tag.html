@@ -5,26 +5,18 @@
 <div class="posts-list">
   {{ range $pages }}
   <article class="post-entry">
-    <a href="{{ .RelPermalink }}" aria-label="post link to {{ .Title }}">
-      <header class="entry-header">
-        <h2>
+    <header class="entry-header">
+      <h2>
+        <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .RelPermalink }}">
           {{ .Title }}
-          {{ if .Draft }}<span class="entry-isdraft">  [Borrador]</span>{{ end }}
-        </h2>
-      </header>
-    </a>
+        </a>
+      </h2>
+    </header>
     <div class="entry-content">
       <p>{{ .Summary | plainify | safeHTML | truncate 150 }}...</p>
     </div>
     <footer class="entry-footer">
-      <span title="Tiempo de lectura estimado">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
-          <title>Tiempo de lectura</title>
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        {{ .ReadingTime }} min
-      </span>
+      <span title="Tiempo de lectura estimado">{{ .ReadingTime }} min</span>
     </footer>
   </article>
   {{ end }}
