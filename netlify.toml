@@ -1,8 +1,0 @@
-[build]
-  # Este es el comando final. Es la combinación de todo lo que hemos aprendido.
-  # Fuerza la URL Y fuerza el tema, ignorando cualquier otra configuración.
-  command = "hugo --baseURL $URL --theme=PaperMod"
-  publish = "public"
-
-[build.environment]
-  HUGO_VERSION = "0.128.2"
