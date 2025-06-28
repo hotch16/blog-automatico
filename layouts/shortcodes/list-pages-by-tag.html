@@ -1,11 +1,34 @@
 {{ $tagName := .Get 0 }}
-{{ $pages := where .Site.RegularPages "Params.tags" "intersect" (slice $tagName) }}
+{{ $pages := where .Site.RegularPages "Params.tags" "intersect" (slice $tagName) | first 5 }}
+
 {{ if $pages }}
-<ul>
+<div class="posts-list">
   {{ range $pages }}
-  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2>
+        {{ .Title }}
+        {{ if .Draft }}<span class="entry-isdraft">  [Borrador]</span>{{ end }}
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | safeHTML }}...</p>
+    </div>
+    <footer class="entry-footer">
+      <span title="Tiempo de lectura estimado">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+          <title>Tiempo de lectura</title>
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        {{ .ReadingTime }} min
+      </span>
+        
+      <a class="read-more" href="{{ .RelPermalink }}">Leer más →</a>
+    </footer>
+  </article>
   {{ end }}
-</ul>
+</div>
 {{ else }}
-<p>No se encontraron artículos para esta categoría todavía.</p>
+<p>No se encontraron artículos para esta categoría todavía. ¡Vuelve pronto!</p>
 {{ end }}
