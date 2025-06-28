@@ -1,6 +1,6 @@
 baseURL = "https://cnc-101.netlify.app/"
 languageCode = "es-es"
-title = "Taller Digital de Precisión"
+title = "CNC 101: Guía para Principiantes" # Título del sitio ligeramente mejorado para SEO
 theme = "PaperMod"
 
 # Configuración para el modo multilingüe (preparado para el futuro)
@@ -16,39 +16,38 @@ defaultContentLanguage = "es"
       name = "Blog"
       url = "/posts/"
       weight = 5
-    [[languages.es.menu.main]]
-      identifier = "archives"
-      name = "Archivo"
-      url = "/archives/"
-      weight = 10
+    # [[languages.es.menu.main]]  <-- CAMBIO 1: Comentado para ocultar "Archivo"
+    #   identifier = "archives"
+    #   name = "Archivo"
+    #   url = "/archives/"
+    #   weight = 10
     [[languages.es.menu.main]]
       identifier = "search"
       name = "Buscar"
       url = "/search/"
       weight = 15
-    [[languages.es.menu.main]]
-      identifier = "tags"
-      name = "Tags"
-      url = "/tags/"
-      weight = 20
+    # [[languages.es.menu.main]]  <-- CAMBIO 1: Comentado para ocultar "Tags"
+    #   name = "Tags"
+    #   url = "/tags/"
+    #   weight = 20
 
 # Parámetros específicos del tema PaperMod
 [params]
   env = "production"
-  author = "Erick Garcia" # Puedes poner tu nombre o un seudónimo
-  description = "Exploraciones en mecánica, IA, y el arte de la creación digital y manual."
-  defaultTheme = "dark" # "light" | "dark" | "auto"
-  disableThemeToggle = false # Permite que los usuarios cambien entre modo claro/oscuro
+  author = "Erick Garcia"
+  description = "Tu guía de inicio en el mundo del mecanizado CNC. Aprende desde cero con tutoriales y proyectos." # Descripción del sitio ligeramente mejorada
+  defaultTheme = "dark" 
+  disableThemeToggle = false 
   ShowShareButtons = true
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
   
   [params.profileMode]
-    enabled = true # Esto activa el modo de perfil en la página de inicio
+    enabled = false # <-- CAMBIO 2: Desactivado para mostrar la lista de posts en la página de inicio
     title = "Taller Digital de Precisión"
     subtitle = "Exploraciones en Mecánica, IA y el Arte de la Creación"
-    # imageUrl = "/images/profile.png" # Descomenta y pon una imagen tuya en static/images/
+    # imageUrl = "/images/profile.png" 
     # imageTitle = "Mi Logo o Foto"
     # imageWidth = 120
     # imageHeight = 120
