@@ -1,0 +1,6 @@
+/* Arreglo para la superposición de texto en las tarjetas de la página de inicio */
+.post-entry .entry-header h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
