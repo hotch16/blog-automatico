@@ -1,0 +1,8 @@
+[build]
+  # Este es el comando final y correcto
+  command = "hugo --gc --minify --theme=PaperMod --baseURL $URL"
+  publish = "public"
+
+[build.environment]
+  # Esta es la línea crucial que faltaba: le dice a Netlify que instale Hugo
+  HUGO_VERSION = "0.128.2"
