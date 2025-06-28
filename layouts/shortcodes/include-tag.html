@@ -1,0 +1,5 @@
+{{ $tagName := .Get 0 }}
+{{ $pages := where .Site.RegularPages "Params.tags" "intersect" (slice $tagName) }}
+{{ range $pages }}
+    {{ .Render "summary" }}
+{{ end }}
