@@ -3,7 +3,6 @@ languageCode = "es-es"
 title = "CNC 101: Guía para Principiantes"
 theme = "PaperMod"
 
-# Configuración para el modo multilingüe (preparado para el futuro)
 defaultContentLanguage = "es"
 
 [languages]
@@ -17,12 +16,16 @@ defaultContentLanguage = "es"
       url = "/posts/"
       weight = 5
     [[languages.es.menu.main]]
+      identifier = "about"
+      name = "Sobre Mí"
+      url = "/about/"
+      weight = 10
+    [[languages.es.menu.main]]
       identifier = "search"
       name = "Buscar"
       url = "/search/"
       weight = 15
 
-# Parámetros específicos del tema PaperMod
 [params]
   env = "production"
   author = "Erick Garcia"
@@ -34,8 +37,6 @@ defaultContentLanguage = "es"
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
 
-# --- INICIO: Posts Relacionados y Búsqueda Mejorada ---
-# Esta sección activa la búsqueda de posts similares al final de cada artículo
 [params.fuseOpts]
   isCaseSensitive = false
   shouldSort = true
@@ -46,4 +47,4 @@ defaultContentLanguage = "es"
   keys = ["title", "permalink", "summary", "content"]
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"] # Habilita el index para la búsqueda
+  home = ["HTML", "RSS", "JSON"]
