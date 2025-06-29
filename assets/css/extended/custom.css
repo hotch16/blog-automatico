@@ -1,17 +1,54 @@
-/* --- Arreglos para la Página de Inicio --- */
+/* =================================================================== */
+/*             ESTILOS PERSONALIZADOS GLOBALES PARA CNC 101            */
+/* =================================================================== */
+
+
+/* --- 1. Arreglo para la Página de Inicio --- */
 
 /* Oculta los enlaces de anclaje (#) de los encabezados. */
 .page-content h2 .anchor {
     display: none;
 }
 
-/* --- Estilos Responsivos para Móviles --- */
 
-/* Centra los títulos principales en pantallas móviles (tablets y teléfonos) */
-@media screen and (max-width: 768px) {
-    .page-header h1,
-    .page-content h2,
-    .post-entry .entry-header h2 {
-        text-align: center;
-    }
+/* --- 2. Títulos Centrados en TODAS las pantallas (PC y Móvil) --- */
+.page-header h1,
+.page-content h2,
+.post-entry .entry-header h2 {
+    text-align: center;
+}
+
+
+/* --- 3. Reposicionamiento de la Cabecera (Header) --- */
+
+/* Mueve todo el bloque del menú a la derecha */
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Reordena los elementos dentro del menú */
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Pone el icono Sol/Luna al principio del bloque del menú */
+.theme-toggle {
+    order: -1; /* Truco de CSS para mover un elemento al inicio */
+    margin-right: 20px; /* Añade un espacio entre el icono y "Blog" */
+}
+
+
+/* --- 4. Añade espacio vertical en las tarjetas de post --- */
+
+/* Espacio debajo del título de la tarjeta */
+.post-entry .entry-header {
+    margin-bottom: 12px;
+}
+
+/* Espacio debajo del texto de resumen de la tarjeta */
+.post-entry .entry-content {
+    margin-bottom: 12px;
 }
