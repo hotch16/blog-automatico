@@ -2,47 +2,24 @@
 /*             ESTILOS PERSONALIZADOS GLOBALES PARA CNC 101            */
 /* =================================================================== */
 
-
 /* --- 1. Títulos Centrados en TODAS las pantallas (PC y Móvil) --- */
-.page-header h1,
-.page-content h2,
-.post-entry .entry-header h2 {
+.page-header h1, .page-content h2, .post-entry .entry-header h2 {
     text-align: center;
 }
 
-
-/* --- 2. Reposicionamiento de la Cabecera (Header) - SOLUCIÓN REAL --- */
-
-/* a) Convierte la cabecera en un contenedor flexible */
-.header .inner {
+/* --- 2. Reposicionamiento de la Cabecera (Header) --- */
+.header .nav {
     display: flex;
     align-items: center;
 }
-
-/* b) El logo empuja a TODOS los demás elementos a la derecha */
 .header .logo {
-    margin-right: auto;
+    margin-right: auto; /* El logo empuja todo lo demás a la derecha */
 }
-
-/* c) Asegura que el menú sea flexible para poder reordenar sus "hermanos" */
-.header .menu {
-    display: flex;
-    align-items: center;
-}
-
-/* d) Pone el icono del sol/luna ANTES del menú usando la propiedad 'order' */
 .theme-toggle {
-    order: -1; /* Mueve el icono al principio del bloque derecho */
-    margin-right: 20px; /* Añade espacio entre el icono y "Blog" */
+    margin-right: 20px; /* Espacio entre el icono y "Blog" */
 }
 
-
-/* --- 3. Añade espacio vertical en las tarjetas de post --- */
+/* --- 3. Espaciado en Tarjetas y Otros Arreglos --- */
 .post-entry .entry-header { margin-bottom: 12px; }
 .post-entry .entry-content { margin-bottom: 12px; }
-
-
-/* --- 4. (Mantenimiento) Oculta anclajes en la homepage --- */
-.page-content h2 .anchor {
-    display: none;
-}
+.page-content h2 .anchor { display: none; }
