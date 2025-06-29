@@ -64,7 +64,7 @@ featured_image: "featured.png"
 
 ## Apoyo Visual: Ver el Tutorial en YouTube
 
-{{< video-link id="ieYAdppst4s" text="Ver un vídeo sobre IA para inspirar (no es un tutorial)" >}}
+{{< video-link id="oHg5SJYRHA0" text="Ver vídeo de prueba (Big Buck Bunny)" >}}
 
 
 **(Conclusión final):**  Recuerda siempre priorizar tu seguridad al trabajar con herramientas y materiales.  Este tutorial es un punto de partida,  busca información adicional y practica para perfeccionar tu técnica. ¡Buen trabajo!
