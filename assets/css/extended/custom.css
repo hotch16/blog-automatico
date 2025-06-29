@@ -3,15 +3,7 @@
 /* =================================================================== */
 
 
-/* --- 1. Arreglo para la Página de Inicio --- */
-
-/* Oculta los enlaces de anclaje (#) de los encabezados. */
-.page-content h2 .anchor {
-    display: none;
-}
-
-
-/* --- 2. Títulos Centrados en TODAS las pantallas (PC y Móvil) --- */
+/* --- 1. Títulos Centrados en TODAS las pantallas (PC y Móvil) --- */
 .page-header h1,
 .page-content h2,
 .post-entry .entry-header h2 {
@@ -19,36 +11,32 @@
 }
 
 
-/* --- 3. Reposicionamiento de la Cabecera (Header) --- */
+/* --- 2. Reposicionamiento de la Cabecera (Header) --- */
 
-/* Mueve todo el bloque del menú a la derecha */
+/* a) Convierte la cabecera en un contenedor flexible */
 .header .inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-/* Reordena los elementos dentro del menú */
-.header .menu {
-    display: flex;
-    align-items: center;
-}
+/* b) Le da un orden visual a cada elemento */
+.header .logo { order: 1; }
+.theme-toggle { order: 2; }
+.header .menu { order: 3; }
 
-/* Pone el icono Sol/Luna al principio del bloque del menú */
+/* c) Empuja el icono (y el menú que le sigue) a la derecha */
 .theme-toggle {
-    order: -1; /* Truco de CSS para mover un elemento al inicio */
-    margin-right: 20px; /* Añade un espacio entre el icono y "Blog" */
+    margin-left: auto; /* La clave de todo */
+    margin-right: 15px; /* Espacio entre el icono y "Blog" */
 }
 
 
-/* --- 4. Añade espacio vertical en las tarjetas de post --- */
+/* --- 3. Añade espacio vertical en las tarjetas de post --- */
+.post-entry .entry-header { margin-bottom: 12px; }
+.post-entry .entry-content { margin-bottom: 12px; }
 
-/* Espacio debajo del título de la tarjeta */
-.post-entry .entry-header {
-    margin-bottom: 12px;
-}
 
-/* Espacio debajo del texto de resumen de la tarjeta */
-.post-entry .entry-content {
-    margin-bottom: 12px;
+/* --- 4. (Mantenimiento) Oculta anclajes en la homepage --- */
+.page-content h2 .anchor {
+    display: none;
 }
