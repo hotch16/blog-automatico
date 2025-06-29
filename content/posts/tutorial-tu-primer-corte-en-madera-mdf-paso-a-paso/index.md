@@ -64,7 +64,7 @@ featured_image: "featured.png"
 
 ## Apoyo Visual: Ver el Tutorial en YouTube
 
-{{< video-link id="g9tTpaG1V2A" >}}
+{{< youtube pK_m_7s2nF4 >}}
 
 
 **(Conclusión final):**  Recuerda siempre priorizar tu seguridad al trabajar con herramientas y materiales.  Este tutorial es un punto de partida,  busca información adicional y practica para perfeccionar tu técnica. ¡Buen trabajo!
