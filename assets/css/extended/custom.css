@@ -11,7 +11,7 @@
 }
 
 
-/* --- 2. Reposicionamiento de la Cabecera (Header) --- */
+/* --- 2. Reposicionamiento de la Cabecera (Header) - SOLUCIÓN REAL --- */
 
 /* a) Convierte la cabecera en un contenedor flexible */
 .header .inner {
@@ -19,15 +19,21 @@
     align-items: center;
 }
 
-/* b) Le da un orden visual a cada elemento */
-.header .logo { order: 1; }
-.theme-toggle { order: 2; }
-.header .menu { order: 3; }
+/* b) El logo empuja a TODOS los demás elementos a la derecha */
+.header .logo {
+    margin-right: auto;
+}
 
-/* c) Empuja el icono (y el menú que le sigue) a la derecha */
+/* c) Asegura que el menú sea flexible para poder reordenar sus "hermanos" */
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+
+/* d) Pone el icono del sol/luna ANTES del menú usando la propiedad 'order' */
 .theme-toggle {
-    margin-left: auto; /* La clave de todo */
-    margin-right: 15px; /* Espacio entre el icono y "Blog" */
+    order: -1; /* Mueve el icono al principio del bloque derecho */
+    margin-right: 20px; /* Añade espacio entre el icono y "Blog" */
 }
 
 
