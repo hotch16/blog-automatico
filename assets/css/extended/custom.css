@@ -3,31 +3,40 @@
 /* =================================================================== */
 
 /* --- 1. Títulos Centrados en TODAS las pantallas (PC y Móvil) --- */
-.page-header h1, .page-content h2, .post-entry .entry-header h2 {
+.page-header h1, .post-content h1, .page-content h2, .post-entry .entry-header h2 {
     text-align: center;
 }
 
 /* --- 2. Reposicionamiento de la Cabecera (Header) --- */
-
-/* a) Comportamiento para ESCRITORIO (pantallas más anchas de 768px) */
+/* (El código que ya funciona, lo mantenemos) */
 @media screen and (min-width: 769px) {
     .header .nav {
         display: flex;
         align-items: center;
     }
     .header .logo {
-        margin-right: auto; /* El logo empuja todo lo demás a la derecha */
+        margin-right: auto;
     }
     .theme-toggle {
-        margin-right: 20px; /* Espacio entre el icono y "Blog" */
+        margin-right: 20px;
     }
 }
 
-/* b) Comportamiento para MÓVIL (se hereda el de escritorio, pero podemos añadir ajustes) */
-/* (Actualmente no necesitamos ajustes específicos para móvil aquí, la estructura base funciona) */
-
-
-/* --- 3. Espaciado en Tarjetas y Otros Arreglos --- */
+/* --- 3. Espaciado y Arreglos Globales --- */
 .post-entry .entry-header { margin-bottom: 12px; }
 .post-entry .entry-content { margin-bottom: 12px; }
-.page-content h2 .anchor { display: none; }
+
+/* Oculta los anclajes (#) de los encabezados EN TODO EL SITIO */
+h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor {
+    display: none;
+}
+
+/* --- 4. Estilo para Enlaces en el Contenido --- */
+/* Hace que los enlaces dentro de un post sean evidentes */
+.post-content a {
+    color: #57a6e0; /* Un color azul claro, fácil de ver */
+    text-decoration: underline; /* Subrayado para máxima claridad */
+}
+.post-content a:hover {
+    color: #8abef7; /* Un azul más brillante al pasar el ratón */
+}
