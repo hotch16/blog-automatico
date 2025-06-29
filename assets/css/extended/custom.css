@@ -8,16 +8,24 @@
 }
 
 /* --- 2. Reposicionamiento de la Cabecera (Header) --- */
-.header .nav {
-    display: flex;
-    align-items: center;
+
+/* a) Comportamiento para ESCRITORIO (pantallas más anchas de 768px) */
+@media screen and (min-width: 769px) {
+    .header .nav {
+        display: flex;
+        align-items: center;
+    }
+    .header .logo {
+        margin-right: auto; /* El logo empuja todo lo demás a la derecha */
+    }
+    .theme-toggle {
+        margin-right: 20px; /* Espacio entre el icono y "Blog" */
+    }
 }
-.header .logo {
-    margin-right: auto; /* El logo empuja todo lo demás a la derecha */
-}
-.theme-toggle {
-    margin-right: 20px; /* Espacio entre el icono y "Blog" */
-}
+
+/* b) Comportamiento para MÓVIL (se hereda el de escritorio, pero podemos añadir ajustes) */
+/* (Actualmente no necesitamos ajustes específicos para móvil aquí, la estructura base funciona) */
+
 
 /* --- 3. Espaciado en Tarjetas y Otros Arreglos --- */
 .post-entry .entry-header { margin-bottom: 12px; }
