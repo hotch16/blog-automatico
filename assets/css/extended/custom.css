@@ -40,3 +40,27 @@ h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor {
 .post-content a:hover {
     color: #8abef7; /* Un azul más brillante al pasar el ratón */
 }
+/* --- 5. Estilos para la Tarjeta de Enlace de Vídeo --- */
+.video-link-card a {
+    display: block;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #2e2e33;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+}
+.video-link-card a:hover {
+    background-color: #3a3a40;
+}
+.video-link-card a strong {
+    display: block;
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.video-link-card a span {
+    font-size: 0.9em;
+    color: #bbb;
+}
