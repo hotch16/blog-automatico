@@ -64,12 +64,7 @@ featured_image: "featured.png"
 
 ## Apoyo Visual: Ver el Tutorial en YouTube
 
-<div class="video-link-card">
-    <a href="https://www.youtube.com/watch?v=g9tTpaG1V2A" target="_blank" rel="noopener noreferrer">
-        <strong>Ver el Tutorial en YouTube →</strong>
-        <span>(El vídeo se abrirá en una nueva pestaña)</span>
-    </a>
-</div>
+{{< video-link id="g9tTpaG1V2A" >}}
 
 
 **(Conclusión final):**  Recuerda siempre priorizar tu seguridad al trabajar con herramientas y materiales.  Este tutorial es un punto de partida,  busca información adicional y practica para perfeccionar tu técnica. ¡Buen trabajo!
