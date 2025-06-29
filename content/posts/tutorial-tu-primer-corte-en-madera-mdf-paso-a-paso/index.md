@@ -62,8 +62,14 @@ featured_image: "featured.png"
 
 **(Para que puedas ver el proceso en acción, aquí tienes un vídeo que complementa perfectamente esta guía. ¡Verlo te ayudará a aclarar cualquier duda!
 
-{{< youtube g9tTpaG1V2A >}}
-```5.  Guarda los cambios haciendo "Commit changes". En un par de minutos, el post se actualizará en tu web con el vídeo incrustado.)**
+## Apoyo Visual: Ver el Tutorial en YouTube
+
+<div class="video-link-card">
+    <a href="https://www.youtube.com/watch?v=g9tTpaG1V2A" target="_blank" rel="noopener noreferrer">
+        <strong>Ver el Tutorial en YouTube →</strong>
+        <span>(El vídeo se abrirá en una nueva pestaña)</span>
+    </a>
+</div>
 
 
 **(Conclusión final):**  Recuerda siempre priorizar tu seguridad al trabajar con herramientas y materiales.  Este tutorial es un punto de partida,  busca información adicional y practica para perfeccionar tu técnica. ¡Buen trabajo!
