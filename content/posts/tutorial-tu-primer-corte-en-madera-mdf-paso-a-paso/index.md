@@ -62,7 +62,7 @@ featured_image: "featured.png"
 
 **(Para que puedas ver el proceso en acción, aquí tienes un vídeo que complementa perfectamente esta guía. ¡Verlo te ayudará a aclarar cualquier duda!
 
-{{< youtube e-U4i3G-Y4M >}}
+{{< youtube g9tTpaG1V2A >}}
 ```5.  Guarda los cambios haciendo "Commit changes". En un par de minutos, el post se actualizará en tu web con el vídeo incrustado.)**
 
 
