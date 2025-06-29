@@ -60,7 +60,11 @@ featured_image: "featured.png"
 ¡Felicidades! Has completado tu primer corte en madera MDF.  Recuerda que la práctica hace al maestro, así que continúa practicando para mejorar tu técnica y precisión.  No tengas miedo de experimentar y probar diferentes técnicas.  Con la práctica y la seguridad como prioridad, podrás realizar cortes precisos y limpios en madera MDF con confianza.
 
 
-**(Sección de vídeo -  Aquí se insertaría el enlace o la inserción del vídeo tutorial)**
+**(Para que puedas ver el proceso en acción, aquí tienes un vídeo que complementa perfectamente esta guía. ¡Verlo te ayudará a aclarar cualquier duda!
+
+## Apoyo Visual: Ver el Tutorial en YouTube
+
+{{< video-link id="g9tTpaG1V2A" >}}
 
 
 **(Conclusión final):**  Recuerda siempre priorizar tu seguridad al trabajar con herramientas y materiales.  Este tutorial es un punto de partida,  busca información adicional y practica para perfeccionar tu técnica. ¡Buen trabajo!
