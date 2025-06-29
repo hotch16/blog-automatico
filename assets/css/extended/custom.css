@@ -1,0 +1,17 @@
+/* --- Arreglos para la Página de Inicio --- */
+
+/* Oculta los enlaces de anclaje (#) de los encabezados. */
+.page-content h2 .anchor {
+    display: none;
+}
+
+/* --- Estilos Responsivos para Móviles --- */
+
+/* Centra los títulos principales en pantallas móviles (tablets y teléfonos) */
+@media screen and (max-width: 768px) {
+    .page-header h1,
+    .page-content h2,
+    .post-entry .entry-header h2 {
+        text-align: center;
+    }
+}
