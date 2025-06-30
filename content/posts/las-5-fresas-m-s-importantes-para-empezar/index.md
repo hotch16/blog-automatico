@@ -2,7 +2,10 @@
 date: '2025-06-30T02:06:14.007410'
 draft: false
 featured_image: featured.png
+hideMeta: true
 ---
+
+![Título Corregido](featured.png)
 
 Para principiantes en el mecanizado CNC, elegir las herramientas adecuadas es fundamental para el éxito del proyecto. No todas las herramientas de fresado son iguales, y algunas son más fáciles de usar que otras. Esta lista se centra en cinco herramientas que ofrecen una excelente combinación de versatilidad, facilidad de uso y aplicaciones comunes para principiantes.
 
@@ -20,3 +23,4 @@ Para principiantes en el mecanizado CNC, elegir las herramientas adecuadas es fu
 **Conclusión:**
 
 Esta selección de cinco herramientas de fresado ofrece una buena base para principiantes. Recuerda investigar las características específicas de tu máquina CNC y el material que vas a trabajar para asegurarte de elegir las herramientas más adecuadas para tu proyecto. ¡Feliz mecanizado!
+---
