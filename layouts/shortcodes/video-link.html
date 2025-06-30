@@ -1,8 +1,0 @@
-{{ $id := .Get "id" }}
-{{ $text := .Get "text" | default "Ver el vídeo de apoyo en YouTube" }}
-<div class="video-link-card">
-    <a href="https://www.youtube.com/watch?v={{ $id }}" target="_blank" rel="noopener noreferrer">
-        <strong>{{ $text }} →</strong>
-        <span>(El vídeo se abrirá en una nueva pestaña)</span>
-    </a>
-</div>
