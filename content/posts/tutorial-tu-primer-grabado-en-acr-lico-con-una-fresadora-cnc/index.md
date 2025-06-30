@@ -1,11 +1,10 @@
 ---
 title: "Tutorial: Tu Primer Grabado en Acrílico con una Fresadora CNC"
-date: 2025-06-29T23:58:28.603998  <!-- Consider updating this to the actual publication date -->
-description: "Aprende a crear tu primer grabado en acrílico con una fresadora CNC con esta guía paso a paso.  Ideal para principiantes."
-tags: ["tutorial", "paso a paso", "proyecto", "cnc", "acrilico", "grabado", "fresadora"]  <!-- Added more relevant tags -->
+date: "2025-07-01T12:00:00Z" # Usamos una fecha genérica, no afecta
+description: "Aprende a realizar tu primer grabado en acrílico con esta guía paso a paso para tu fresadora CNC."
+tags: ["tutorial", "paso a paso", "proyecto", "acrilico"]
 author: "Erick Garcia"
-draft: false  <!-- Set to false when ready to publish -->
-
+draft: false # Lo ponemos en false para que se publique
 featured_image: "featured.png"
 ---
 ![Tutorial: Tu Primer Grabado en Acrílico con una Fresadora CNC](featured.png)
