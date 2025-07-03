@@ -4,7 +4,7 @@
   {{- range first 5 (where .Site.RegularPages "Section" "posts") -}}
     <a class="recent-post-item" href="{{ .Permalink }}">
       <span class="recent-post-title">{{ .Title }}</span>
-      <span class="recent-post-date">{{ .Date.Format "2 Ene, 2006" }}</span>
+      <span class="recent-post-date">{{ .Date.Format (.Site.Params.DateFormat | default "2 Jan, 2006") }}</span>
     </a>
   {{- end -}}
 </div>
