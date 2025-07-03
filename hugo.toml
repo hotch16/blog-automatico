@@ -37,6 +37,7 @@ defaultContentLanguage = "es"
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
   custom_css = ["css/custom.css"]
+  DateFormat = "2 Jan, 2006"
 
 [params.fuseOpts]
   isCaseSensitive = false
