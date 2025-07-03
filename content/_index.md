@@ -7,7 +7,7 @@ description: "Aprende todo sobre el mecanizado CNC con nuestras guías detallada
 
 Bienvenido a **CNC 101**, la guía definitiva para dominar el arte del Control Numérico por Computadora. Desde la elección de tu primera **fresadora 3018** hasta la programación de un **torno industrial**, te cubrimos con tutoriales claros y guías exhaustivas.
 
----
+
 
 ## Explora Nuestros Pilares de Contenido
 
@@ -33,7 +33,7 @@ Hemos organizado nuestro conocimiento en "Hubs" temáticos para que puedas apren
 </div>
 </div>
 
----
+
 
 ## Últimos Artículos Publicados
 

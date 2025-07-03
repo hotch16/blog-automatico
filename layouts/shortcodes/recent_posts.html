@@ -1,12 +1,9 @@
-<!-- Este es el molde para mostrar los posts recientes -->
-<ul>
-  {{/* Busca las 5 primeras páginas regulares de la sección "posts" */}}
+<!-- Versión mejorada con clases para CSS -->
+<div class="recent-posts-container">
   {{- range first 5 (where .Site.RegularPages "Section" "posts") -}}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <span style="color: #999; font-size: 0.9em; margin-left: 10px;">
-        - {{ .Date.Format "2 Ene, 2006" }}
-      </span>
-    </li>
+    <a class="recent-post-item" href="{{ .Permalink }}">
+      <span class="recent-post-title">{{ .Title }}</span>
+      <span class="recent-post-date">{{ .Date.Format "2 Ene, 2006" }}</span>
+    </a>
   {{- end -}}
-</ul>
+</div>
