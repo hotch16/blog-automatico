@@ -1,5 +1,6 @@
-<!-- Versión mejorada con clases para CSS -->
+<!-- Versión mejorada con clases para que el CSS pueda darle estilo -->
 <div class="recent-posts-container">
+  {{/* Busca las 5 primeras páginas regulares de la sección "posts" */}}
   {{- range first 5 (where .Site.RegularPages "Section" "posts") -}}
     <a class="recent-post-item" href="{{ .Permalink }}">
       <span class="recent-post-title">{{ .Title }}</span>
