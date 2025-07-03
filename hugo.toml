@@ -36,6 +36,7 @@ defaultContentLanguage = "es"
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
+  custom_css = ["css/custom.css"]
 
 [params.fuseOpts]
   isCaseSensitive = false
