@@ -83,3 +83,29 @@
 .recent-post-item a:hover .recent-post-title {
   text-decoration: underline;
 }
+/* Estilos para el header cuando está fijo */
+.header.sticky {
+    position: fixed; /* Usamos 'fixed' porque JS controlará cuándo se aplica */
+    top: 0;
+    left: 0; /* Asegura que se alinee a la izquierda */
+    right: 0; /* Asegura que ocupe todo el ancho */
+    width: 100%;
+    z-index: 100;
+
+    /* Efectos visuales */
+    background-color: var(--bg);
+    box-shadow: var(--shadow);
+    
+    /* Una pequeña animación para que la aparición sea suave */
+    animation: slide-down 0.2s ease-out;
+}
+
+/* Definimos la animación */
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
