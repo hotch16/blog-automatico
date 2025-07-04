@@ -1,61 +1,40 @@
 /*
 ============================================================
-SOLUCIÓN ESTRUCTURAL DEFINITIVA PARA STICKY HEADER
+SOLUCIÓN ARQUITECTURAL DEFINITIVA PARA PAPERMOD
 ============================================================
 */
 
-/*
- PARTE 1: LIBERAR EL HEADER DE SU "CÁRCEL"
- Anulamos TODAS las propiedades del body que pueden crear
- un nuevo contexto de apilamiento y romper position:sticky.
-*/
+/* 1. Establecemos el layout principal del body */
 body {
-    transform: none !important;
-    -webkit-transform: none !important;
-    filter: none !important;
-    -webkit-filter: none !important;
-    perspective: none !important;
-    -webkit-perspective: none !important;
-    transform-style: flat !important;
-    -webkit-transform-style: flat !important;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* El body ocupa el 100% de la altura de la ventana */
 }
 
-/*
- PARTE 2: EL HEADER PEGAJOSO
- Ahora que el header es "libre", definimos su comportamiento
- cuando el JavaScript le añada la clase '.sticky'.
-*/
-.header.sticky {
-    position: fixed; /* Usamos 'fixed' para máxima compatibilidad */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-
-    background-color: var(--bg);
-    box-shadow: var(--shadow);
-    
-    animation: header-slide-down 0.3s ease-out;
+/* 2. El header es un elemento de este layout, pero no se encoge */
+.header {
+    flex-shrink: 0;
 }
 
-/*
- PARTE 3: EMPUJAR EL CONTENIDO PRINCIPAL
- Creamos un "espacio fantasma" del mismo alto que el header
- para que el contenido principal no se deslice por debajo.
-*/
+/* 3. El contenido principal es el que crece y el único que se desplaza */
 .main {
-    padding-top: var(--header-height);
+    flex-grow: 1;      /* Le permite ocupar todo el espacio sobrante */
+    overflow-y: auto;  /* AÑADE LA BARRA DE SCROLL SOLO A ESTA SECCIÓN */
 }
 
-/* Animación para la aparición suave */
-@keyframes header-slide-down {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+/* 4. El footer también es un elemento fijo */
+.footer {
+    flex-shrink: 0;
 }
+
+/*
+============================================================
+FIN DE LA SOLUCIÓN ESTRUCTURAL
+============================================================
+*/
+
+
+/* --- El resto de tus estilos (Hubs, Posts, etc.) van aquí debajo --- */
 
 
 /* --- Estilos Anteriores (Sin Cambios) --- */

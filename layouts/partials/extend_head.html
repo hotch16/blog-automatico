@@ -1,4 +1,0 @@
-{{/* Carga de CSS personalizado con fingerprinting para evitar problemas de caché */}}
-{{- $customCSS := resources.Get "css/extended/custom.css" | resources.Minify | resources.Fingerprint -}}
-<link rel="stylesheet" href="{{ $customCSS.Permalink }}" integrity="{{ $customCSS.Data.Integrity }}"> 
-<meta name="google-site-verification" content="Bg19EtSOy2iYcOE3BvyXXuIK7NK9CeMzCvz6KMxB3zg" />
