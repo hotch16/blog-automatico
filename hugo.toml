@@ -38,6 +38,7 @@ defaultContentLanguage = "es"
   ShowCodeCopyButtons = true
   custom_css = ["css/custom.css"]
   DateFormat = "2 Jan, 2006"
+  disableSpecial1stPost = true
 
 [params.fuseOpts]
   isCaseSensitive = false
