@@ -69,9 +69,18 @@
   text-decoration: underline;
 }
 
-/* Solución definitiva para el header fijo */
-.sticky-header {
-    position: -webkit-sticky; /* Compatibilidad Safari */
+/*
+============================================================
+SOLUCIÓN FINAL Y ESTRUCTURAL PARA STICKY HEADER
+============================================================
+1. Hacemos que el header se pegue a la parte superior.
+2. EMPUJAMOS el contenido principal hacia abajo para que nunca
+   se oculte detrás del header.
+*/
+
+/* Paso 1: El header pegajoso */
+.header {
+    position: -webkit-sticky; /* Compatibilidad con Safari antiguo */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -79,3 +88,11 @@
     box-shadow: var(--shadow);
 }
 
+/* Paso 2: El empuje del contenido principal (LA PIEZA CLAVE QUE FALTABA) */
+.main {
+    /*
+    Usamos la variable de altura del header definida en el tema
+    para crear un espacio de relleno en la parte superior del contenido.
+    */
+    padding-top: var(--header-height);
+}
