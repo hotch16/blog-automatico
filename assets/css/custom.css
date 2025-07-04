@@ -83,29 +83,30 @@
 .recent-post-item a:hover .recent-post-title {
   text-decoration: underline;
 }
-/* Estilos para el header cuando está fijo */
-.header.sticky {
-    position: fixed; /* Usamos 'fixed' porque JS controlará cuándo se aplica */
-    top: 0;
-    left: 0; /* Asegura que se alinee a la izquierda */
-    right: 0; /* Asegura que ocupe todo el ancho */
-    width: 100%;
-    z-index: 100;
+/*
+====================================================================
+Solución Definitiva para el Sticky Header en PaperMod
+====================================================================
+El tema crea un "contexto de apilamiento" en el <body> que "rompe"
+el comportamiento de position: sticky/fixed.
 
-    /* Efectos visuales */
-    background-color: var(--bg);
-    box-shadow: var(--shadow);
-    
-    /* Una pequeña animación para que la aparición sea suave */
-    animation: slide-down 0.2s ease-out;
+Esta solución realiza dos acciones:
+1. Resetea las propiedades conflictivas en el <body>.
+2. Aplica de forma forzosa la posición sticky al <header>.
+*/
+
+body {
+    /* Anulamos cualquier transform que esté rompiendo el contexto */
+    transform: none !important;
 }
 
-/* Definimos la animación */
-@keyframes slide-down {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+.header {
+    /* Aplicamos la posición sticky de forma definitiva */
+    position: sticky !important;
+    top: 0;
+    z-index: 1000; /* Un z-index alto para estar por encima de todo */
+
+    /* Y nos aseguramos de que tenga un fondo para no ser transparente */
+    background-color: var(--bg);
+    box-shadow: var(--shadow); /* Usamos la sombra del tema para un efecto limpio */
 }
