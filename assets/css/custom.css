@@ -1,3 +1,66 @@
+/*
+============================================================
+SOLUCIÓN ESTRUCTURAL DEFINITIVA PARA STICKY HEADER
+============================================================
+*/
+
+/*
+ PARTE 1: LIBERAR EL HEADER DE SU "CÁRCEL"
+ Anulamos TODAS las propiedades del body que pueden crear
+ un nuevo contexto de apilamiento y romper position:sticky.
+*/
+body {
+    transform: none !important;
+    -webkit-transform: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    perspective: none !important;
+    -webkit-perspective: none !important;
+    transform-style: flat !important;
+    -webkit-transform-style: flat !important;
+}
+
+/*
+ PARTE 2: EL HEADER PEGAJOSO
+ Ahora que el header es "libre", definimos su comportamiento
+ cuando el JavaScript le añada la clase '.sticky'.
+*/
+.header.sticky {
+    position: fixed; /* Usamos 'fixed' para máxima compatibilidad */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    background-color: var(--bg);
+    box-shadow: var(--shadow);
+    
+    animation: header-slide-down 0.3s ease-out;
+}
+
+/*
+ PARTE 3: EMPUJAR EL CONTENIDO PRINCIPAL
+ Creamos un "espacio fantasma" del mismo alto que el header
+ para que el contenido principal no se deslice por debajo.
+*/
+.main {
+    padding-top: var(--header-height);
+}
+
+/* Animación para la aparición suave */
+@keyframes header-slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* --- Estilos Anteriores (Sin Cambios) --- */
+/* (Aquí van tus estilos para los Hubs y Posts Recientes) */
+
 /* --- Estilos para los Hubs Temáticos --- */
 .hub-container {
     display: grid;
@@ -67,32 +130,4 @@
 }
 .recent-post-item a:hover .recent-post-title {
   text-decoration: underline;
-}
-
-/*
-============================================================
-SOLUCIÓN FINAL Y ESTRUCTURAL PARA STICKY HEADER
-============================================================
-1. Hacemos que el header se pegue a la parte superior.
-2. EMPUJAMOS el contenido principal hacia abajo para que nunca
-   se oculte detrás del header.
-*/
-
-/* Paso 1: El header pegajoso */
-.header {
-    position: -webkit-sticky; /* Compatibilidad con Safari antiguo */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--bg);
-    box-shadow: var(--shadow);
-}
-
-/* Paso 2: El empuje del contenido principal (LA PIEZA CLAVE QUE FALTABA) */
-.main {
-    /*
-    Usamos la variable de altura del header definida en el tema
-    para crear un espacio de relleno en la parte superior del contenido.
-    */
-    padding-top: var(--header-height);
 }
