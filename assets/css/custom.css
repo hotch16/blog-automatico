@@ -83,3 +83,17 @@
 .recent-post-item a:hover .recent-post-title {
   text-decoration: underline;
 }
+/* --- Estilo para la barra de navegación fija (Sticky Header) --- */
+
+/* Seleccionamos el header principal del tema PaperMod */
+.header {
+    position: sticky; /* La magia sucede aquí. El elemento se "pega" al hacer scroll. */
+    top: 0;           /* Lo pegamos a la parte superior de la ventana. */
+    width: 100%;      /* Aseguramos que ocupe todo el ancho. */
+    z-index: 100;     /* Lo ponemos por encima de todo el demás contenido. */
+
+    /* Estilos visuales para cuando se desplaza */
+    /* Usamos las variables del tema para que funcione con modo claro/oscuro */
+    background-color: var(--bg); /* Le damos un color de fondo para que no sea transparente. */
+    box-shadow: var(--shadow);   /* Añadimos la sombra predefinida del tema para un efecto de profundidad. */
+}
