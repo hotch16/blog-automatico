@@ -1,3 +1,4 @@
+/* --- Estilos para los Hubs Temáticos --- */
 .hub-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -5,28 +6,80 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
 .hub-card {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border); /* CORREGIDO */
     border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
 .hub-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
 .hub-card h3 {
     margin-top: 0;
-    color: var(--primary-color); /* Usa el color primario de tu tema */
+    color: var(--primary); /* CORREGIDO */
 }
+
 .hub-button {
     display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--primary-background);
+    background-color: var(--primary); /* CORREGIDO */
+    color: var(--entry_bg); /* CORREGIDO para un contraste perfecto */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     margin-top: 1rem;
+}
+
+
+/* --- Estilos para la sección de "Últimos Artículos Publicados" --- */
+
+/* Contenedor principal del widget */
+.recent-posts-container {
+  margin-top: 1rem;
+}
+
+/* Lista de posts recientes */
+.recent-posts-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Cada elemento de la lista (cada post) */
+.recent-post-item {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+/* El enlace que contiene el título y la fecha */
+.recent-post-item a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Título del post */
+.recent-post-title {
+  font-size: 1.1rem;
+  color: var(--primary); /* ESTE YA ESTABA BIEN */
+  font-weight: 500;
+}
+
+/* Fecha del post */
+.recent-post-date {
+  font-size: 0.85rem;
+  color: var(--secondary); /* ESTE YA ESTABA BIEN */
+  margin-top: 2px;
+}
+
+/* Efecto al pasar el ratón por encima */
+.recent-post-item a:hover .recent-post-title {
+  text-decoration: underline;
 }

@@ -1,10 +1,17 @@
-<!-- Versión mejorada con clases para que el CSS pueda darle estilo -->
+{{/* 
+  Shortcode para mostrar una lista de los 5 posts más recientes.
+  Usa una lista <ul> para una estructura semántica correcta y clases para estilizar con CSS.
+*/}}
 <div class="recent-posts-container">
-  {{/* Busca las 5 primeras páginas regulares de la sección "posts" */}}
-  {{- range first 5 (where .Site.RegularPages "Section" "posts") -}}
-    <a class="recent-post-item" href="{{ .Permalink }}">
-      <span class="recent-post-title">{{ .Title }}</span>
-      <span class="recent-post-date">{{ .Date.Format (.Site.Params.DateFormat | default "2 Jan, 2006") }}</span>
-    </a>
-  {{- end -}}
+  <ul class="recent-posts-list">
+    {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+    {{- range first 5 $pages -}}
+      <li class="recent-post-item">
+        <a href="{{ .Permalink }}">
+          <span class="recent-post-title">{{ .Title }}</span>
+          <span class="recent-post-date">{{ .Date.Format (.Site.Params.DateFormat | default "2 Jan, 2006") }}</span>
+        </a>
+      </li>
+    {{- end -}}
+  </ul>
 </div>
