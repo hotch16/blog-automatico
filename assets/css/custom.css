@@ -87,7 +87,7 @@
 
 /* Seleccionamos el header principal del tema PaperMod */
 .header {
-    position: sticky; /* La magia sucede aquí. El elemento se "pega" al hacer scroll. */
+    position: sticky !important; /* La magia sucede aquí. El elemento se "pega" al hacer scroll. */
     top: 0;           /* Lo pegamos a la parte superior de la ventana. */
     width: 100%;      /* Aseguramos que ocupe todo el ancho. */
     z-index: 100;     /* Lo ponemos por encima de todo el demás contenido. */
