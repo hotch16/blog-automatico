@@ -8,7 +8,7 @@
 }
 
 .hub-card {
-    border: 1px solid var(--border); /* CORREGIDO */
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
@@ -22,13 +22,13 @@
 
 .hub-card h3 {
     margin-top: 0;
-    color: var(--primary); /* CORREGIDO */
+    color: var(--primary);
 }
 
 .hub-button {
     display: inline-block;
-    background-color: var(--primary); /* CORREGIDO */
-    color: var(--entry_bg); /* CORREGIDO para un contraste perfecto */
+    background-color: var(--primary);
+    color: var(--entry_bg);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -36,66 +36,61 @@
     margin-top: 1rem;
 }
 
-
 /* --- Estilos para la sección de "Últimos Artículos Publicados" --- */
-
-/* Contenedor principal del widget */
 .recent-posts-container {
   margin-top: 1rem;
 }
-
-/* Lista de posts recientes */
 .recent-posts-list {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
-
-/* Cada elemento de la lista (cada post) */
 .recent-post-item {
   margin-bottom: 0.75rem;
   line-height: 1.4;
 }
-
-/* El enlace que contiene el título y la fecha */
 .recent-post-item a {
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
-/* Título del post */
 .recent-post-title {
   font-size: 1.1rem;
-  color: var(--primary); /* ESTE YA ESTABA BIEN */
+  color: var(--primary);
   font-weight: 500;
 }
-
-/* Fecha del post */
 .recent-post-date {
   font-size: 0.85rem;
-  color: var(--secondary); /* ESTE YA ESTABA BIEN */
+  color: var(--secondary);
   margin-top: 2px;
 }
-
-/* Efecto al pasar el ratón por encima */
 .recent-post-item a:hover .recent-post-title {
   text-decoration: underline;
 }
-/* Estilos para el header cuando está fijo */
+
+/*
+============================================================
+SOLUCIÓN DEFINITIVA PARA STICKY HEADER
+============================================================
+*/
+/* 1. Definimos cómo se ve el header cuando TIENE la clase .sticky */
 .header.sticky {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
+    right: 0; /* Usamos left y right para asegurar que ocupe todo el ancho */
+    z-index: 1000;
+
+    /* Efectos visuales para dar profundidad */
     background-color: var(--bg);
     box-shadow: var(--shadow);
-    animation: slide-down 0.2s ease-out;
+
+    /* Animación suave para la aparición */
+    animation: slide-down 0.3s ease-out;
 }
 
+/* 2. Definimos la animación */
 @keyframes slide-down {
     0% {
         transform: translateY(-100%);

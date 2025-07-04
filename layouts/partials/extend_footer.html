@@ -1,20 +1,23 @@
 <script>
-    // 1. Seleccionamos el header y el elemento raíz que se desplaza.
+    // Seleccionamos el header
     const header = document.querySelector('.header');
-    const scrollElement = document.documentElement; // <-- ¡ESTA ES LA CORRECCIÓN! Usamos <html>, no window.
 
-    // 2. Si el header existe, procedemos.
+    // Comprobamos que el header existe en la página
     if (header) {
-        // 3. La función que se ejecuta al hacer scroll.
-        function handleScroll() {
-            // 4. Comprobamos la posición del scroll del elemento <html>.
-            if (scrollElement.scrollTop > 10) {
+        // Esta función se ejecutará cada vez que se detecte un scroll
+        const handleScroll = () => {
+            // Comprobamos si nos hemos desplazado más de 10px desde la parte superior
+            if (document.documentElement.scrollTop > 10) {
+                // Si es así, añadimos la clase 'sticky' al header
                 header.classList.add('sticky');
             } else {
+                // Si no, la quitamos
                 header.classList.remove('sticky');
             }
-        }
-        // 5. "Enganchamos" la función al evento de scroll del elemento que realmente se desplaza.
+        };
+
+        // "Enganchamos" nuestra función al evento de scroll del documento.
+        // 'passive: true' es una optimización para que el scroll sea más fluido.
         window.addEventListener('scroll', handleScroll, { passive: true });
     }
 </script>
