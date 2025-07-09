@@ -1,11 +1,11 @@
 ---
 title: "Solución de Problemas Comunes: Pasos Perdidos y Vibraciones en tu CNC"
-featured_image: "solucion-de-problemas-comunes-pasos-perdidos-y-vibraciones.png"
-meta_title: "Guía para Principiantes: Cómo Arreglar Pasos Perdidos y Vibraciones CNC"
-featured_image: "solucion-de-problemas-comunes-pasos-perdidos-y-vibraciones.png"
-meta_description: "Aprende a diagnosticar y solucionar los frustrantes problemas de pasos perdidos y vibraciones en tu máquina CNC. Tutorial paso a paso para principiantes."
-type: "TUTORIAL"
-hub: "Mantenimiento CNC"
+date: "2025-07-09T03:09:10Z"
+description: "Aprende a diagnosticar y solucionar los frustrantes problemas de pasos perdidos y vibraciones en tu máquina CNC. Tutorial paso a paso para principiantes."
+author: "Profe CNC"
+tags: ["CNC", "Solución de Problemas", "Mantenimiento CNC"]
+draft: false
+featured_image: "solucion-de-problemas-pasos-perdidos-y-vibraciones.png"
 ---
 
 ![Solución de Problemas Comunes: Pasos Perdidos y Vibraciones en tu CNC](solucion-de-problemas-comunes-pasos-perdidos-y-vibraciones.png)
