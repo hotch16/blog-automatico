@@ -2,6 +2,7 @@ baseURL = "https://cnc-101.netlify.app/"
 languageCode = "es-es"
 title = "CNC 101: Guía para Principiantes"
 theme = "PaperMod"
+enableRobotsTXT = true  # <--- AÑADE ESTA LÍNEA
 
 defaultContentLanguage = "es"
 
