@@ -8,7 +8,7 @@ draft: false
 featured_image: "/images/blog/codigo-g-cnc.jpg"
 ---
 
-![Qué es el Código G: El Lenguaje Secreto de las Máquinas CNC](featured.png)
+![Qué es el Código G: El Lenguaje Secreto de las Máquinas CNC](guia-completa-del-software-cnc-de-cad-a-cam-y-control.png)
 
 
 Si alguna vez te has preguntado cómo una máquina CNC sabe exactamente dónde cortar, taladrar o fresar, la respuesta se encuentra en un lenguaje de programación con décadas de historia: el **Código G**. Aunque pueda parecer un conjunto de letras y números crípticos, es el idioma universal que permite a los humanos comunicar instrucciones precisas a la maquinaria controlada por ordenador.

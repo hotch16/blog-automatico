@@ -8,7 +8,7 @@ draft: false
 featured_image: "/images/blog/software-cnc-hub.jpg"
 ---
 
-![Software CNC: La Guía Definitiva para Entender y Elegir el Correcto](featured.png)
+![Software CNC: La Guía Definitiva para Entender y Elegir el Correcto](de-modelo-3d-a-g-code-tu-primer-proyecto-cam.png)
 
 
 Si tu máquina CNC es la fuerza bruta, el software es sin duda el cerebro. Sin el programa adecuado, tu impresionante equipo de fresado, corte láser o torneado no es más que un costoso pisapapeles. Pero el término "software CNC" es increíblemente amplio y puede resultar confuso para quienes se inician en este mundo.

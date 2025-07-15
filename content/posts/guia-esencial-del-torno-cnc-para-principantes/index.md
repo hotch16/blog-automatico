@@ -8,7 +8,7 @@ draft: false
 featured_image: "/images/blog/partes-de-un-torno-portada.jpg"
 ---
 
-![Guía Completa de las Partes de un Torno y sus Funciones](featured.png)
+![Guía Completa de las Partes de un Torno y sus Funciones](guia-esencial-del-torno-cnc-para-principantes.png)
 
 
 El torno es una de las máquinas herramienta más fundamentales y versátiles del taller. Es el pilar del mecanizado por arranque de viruta y permite crear piezas de revolución con una precisión asombrosa. Pero para dominarlo, primero hay que conocerlo a fondo. ¿Sabes qué es un charriot o para qué sirve la caja Norton?

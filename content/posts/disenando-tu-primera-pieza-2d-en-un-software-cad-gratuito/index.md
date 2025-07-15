@@ -8,7 +8,7 @@ draft: false
 featured_image: "/images/blog/software-cnc-guia-definitiva.jpg"
 ---
 
-![Software CNC: La Guía Definitiva para Entender CAD, CAM y Control](featured.png)
+![Software CNC: La Guía Definitiva para Entender CAD, CAM y Control](disenando-tu-primera-pieza-2d-en-un-software-cad-gratuito.png)
 
 
 El universo del mecanizado CNC es fascinante, pero el software que lo impulsa puede parecer un laberinto para los no iniciados. Tienes una idea brillante, una máquina CNC lista para trabajar, pero ¿cómo conviertes ese concepto en una pieza física? La respuesta está en una cadena de tres eslabones de software: **CAD, CAM y el Software de Control**.

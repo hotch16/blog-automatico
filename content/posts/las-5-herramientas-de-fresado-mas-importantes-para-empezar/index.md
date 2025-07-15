@@ -8,7 +8,7 @@ draft: false
 featured_image: "/images/blog/guia-fresadora.jpg"
 ---
 
-![Qué es una Fresadora y Para Qué Sirve: La Guía Definitiva](featured.png)
+![Qué es una Fresadora y Para Qué Sirve: La Guía Definitiva](las-5-herramientas-de-fresado-mas-importantes-para-empezar.png)
 
 
 En el corazón de la fabricación moderna y la ingeniería de precisión, pocas máquinas son tan fundamentales y versátiles como la **fresadora**. Si alguna vez te has preguntado cómo se fabrican las piezas metálicas complejas de un motor, los moldes para inyección de plástico o incluso componentes aeroespaciales, la respuesta casi siempre involucra a esta poderosa máquina herramienta.

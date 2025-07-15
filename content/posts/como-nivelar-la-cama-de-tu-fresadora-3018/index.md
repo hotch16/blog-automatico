@@ -8,7 +8,7 @@ draft: false
 featured_image: "/images/blog/fresadora-cnc-guia-completa.jpg"
 ---
 
-![¿Qué es una Fresadora CNC y Cómo Funciona? Guía Completa](featured.png)
+![¿Qué es una Fresadora CNC y Cómo Funciona? Guía Completa](como-nivelar-la-cama-de-tu-fresadora-3018.png)
 
 
 Las fresadoras CNC han revolucionado la industria manufacturera, llevando la precisión y la eficiencia a niveles que antes eran inimaginables. Si alguna vez te has preguntado cómo se fabrican las piezas de alta precisión para un coche, un avión o incluso un implante médico, es muy probable que una de estas máquinas haya estado involucrada.

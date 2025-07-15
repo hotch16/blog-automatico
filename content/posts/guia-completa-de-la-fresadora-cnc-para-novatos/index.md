@@ -8,7 +8,7 @@ draft: false
 featured_image: "/images/blog/fresadora-cnc-en-accion.jpg"
 ---
 
-![Qué es una Fresadora CNC y Cómo Funciona: La Guía Definitiva](featured.png)
+![Qué es una Fresadora CNC y Cómo Funciona: La Guía Definitiva](guia-completa-de-la-fresadora-cnc-para-novatos.png)
 
 
 El fresado CNC es una de las tecnologías más importantes y versátiles en la industria de la fabricación moderna. Desde la creación de prototipos rápidos hasta la producción en masa de piezas de alta precisión, las fresadoras controladas por ordenador han revolucionado la forma en que damos forma a los materiales.

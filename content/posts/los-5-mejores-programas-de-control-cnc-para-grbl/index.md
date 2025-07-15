@@ -8,7 +8,7 @@ draft: false
 featured_image: "/images/blog/software-cnc-guia.jpg"
 ---
 
-![Software CNC: La Guía Completa para Elegir el Mejor en 2024](featured.png)
+![Software CNC: La Guía Completa para Elegir el Mejor en 2024](los-5-mejores-programas-de-control-cnc-para-grbl.png)
 
 
 Si una máquina CNC es el cuerpo musculoso capaz de realizar trabajos de precisión increíble, el software es, sin duda, su cerebro. Elegir el software CNC adecuado es tan crucial como seleccionar la fresa correcta o calibrar los ejes de tu máquina. Es la pieza que traduce tu visión creativa en movimientos físicos y cortes perfectos.

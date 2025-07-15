@@ -1,11 +1,11 @@
-{{/* 
-  Shortcode para mostrar una lista de los 5 posts más recientes.
-  Usa una lista <ul> para una estructura semántica correcta y clases para estilizar con CSS.
-*/}}
 <div class="recent-posts-container">
   <ul class="recent-posts-list">
     {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
-    {{- range first 5 $pages -}}
+
+    {{- /* --- ESTA ES LA ÚNICA LÍNEA QUE CAMBIA --- */ -}}
+    {{- /* Se ha añadido ".ByDate.Reverse" para ordenar las páginas por fecha descendente ANTES de tomar las 5 primeras. */ -}}
+    {{- range first 5 ($pages.ByDate.Reverse) -}}
+
       <li class="recent-post-item">
         <a href="{{ .Permalink }}">
           <span class="recent-post-title">{{ .Title }}</span>
