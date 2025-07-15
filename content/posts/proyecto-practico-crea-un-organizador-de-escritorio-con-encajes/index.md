@@ -3,7 +3,7 @@ title: 'Proyecto Práctico: Crea un Organizador de Escritorio con Encajes'
 description: 'Un tutorial paso a paso para principiantes. Aprende a diseñar, preparar
   y cortar tu primer proyecto CNC útil: un organizador de escritorio con encajes a
   presión.'
-date: 2023-10-26
+date: "2025-07-13T22:36:21.086321+00:00"
 author: Profe CNC
 tags:
 - CNC para principiantes

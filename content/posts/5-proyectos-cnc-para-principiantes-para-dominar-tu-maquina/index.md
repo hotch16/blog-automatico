@@ -3,7 +3,7 @@ title: 5 Proyectos CNC para Principiantes para Dominar tu Máquina
 description: ¿Tienes una nueva máquina CNC y no sabes por dónde empezar? Descubre
   estos 5 proyectos CNC para principiantes que te ayudarán a dominar los conceptos
   básicos y ganar confianza.
-date: 2023-10-27
+date: "2025-07-13T22:36:21.082321+00:00"
 author: Profe CNC
 tags:
 - CNC para principiantes

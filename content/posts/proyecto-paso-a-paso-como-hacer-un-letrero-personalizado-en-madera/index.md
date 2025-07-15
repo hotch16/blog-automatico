@@ -3,7 +3,7 @@ title: 'Proyecto Paso a Paso: Cómo Hacer un Letrero Personalizado en Madera'
 description: ¿Sueñas con crear tus propios diseños en madera? Sigue esta guía para
   principiantes y aprende a hacer tu primer letrero personalizado con una máquina
   CNC, explicado de forma sencilla.
-date: 2023-10-27
+date: "2025-07-13T22:36:21.082321+00:00"
 author: Profe CNC
 tags:
 - CNC para principiantes
